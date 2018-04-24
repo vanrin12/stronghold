@@ -1,0 +1,15 @@
+.TxHistory {
+  padding-bottom: 16px;
+}
+
+.TxHistory__Loader {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  left: 4px;
+  opacity: 0.01;
+  transition: all 0.3s ease-out;
+}
+.TxHistory__Loader--visible {
+  opacity: 1;
+}

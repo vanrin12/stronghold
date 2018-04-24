@@ -1,0 +1,25 @@
+.Trade__Form {
+  flex-direction: column
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Trade__Form {
+    flex-direction: row;
+  }
+}
+
+.Trade__Form__no-funds-msg {
+  padding: 2.5rem 0;
+}
+
+.Trade__Form__minimum-trade-total-msg {
+  color: rgba(226, 54, 54, 1);
+  display: block;
+  margin: 0.5rem 0;
+  text-align: right;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+.Trade__Form__minimum-trade-total-msg--show {
+  opacity: 1;
+}

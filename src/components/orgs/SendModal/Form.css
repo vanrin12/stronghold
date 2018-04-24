@@ -1,0 +1,54 @@
+.SendForm--is-sending * {
+  opacity: 0.9;
+  transition: all 1s ease;
+}
+
+.SendForm__amount {
+  font-size: 1.5em;
+}
+
+@media (max-width: 767px) {
+  .SendForm__form .row {
+    margin: 0;
+  }
+  .SendForm__amount {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.SendForm__form .btn--primary  {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  opacity: 1 !important;
+  transition: all 1.5s ease;
+}
+
+.SendForm__Loader {
+  display: inline-block;
+  position: relative;
+  left: 0.2rem;
+  top: 0.3rem;
+}
+
+.SendForm__error {
+  user-select: auto;
+}
+.SendForm__error small {
+  font-size: 0.75em;
+  color: rgba(0, 0, 0, 0.38)
+}
+.SendForm__error a, .SendForm__error a:active {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: inherit;
+}
+
+.SendForm .btn--primary:disabled {
+  opacity: 0.6 !important;
+}
+
+.SendForm__form input[name="to_address"]::placeholder {
+  font-size: 1em;
+}

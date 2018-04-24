@@ -1,0 +1,6 @@
+@media (max-width: 991px) {
+  .Trade__FormWrap,
+  .Trade__ChartWrap {
+    padding: 0 !important;
+  }
+}

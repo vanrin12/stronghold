@@ -1,0 +1,79 @@
+.BalanceEntry {
+  display: flex;
+  align-items: flex-start;
+  /*
+  padding: 12px 16px;
+  border-bottom: 1px solid #ebebeb;
+  */
+}
+.BalanceEntry__logo {
+  display: inline-block;
+  width: 56px; /* 40px for image + 16px for padding */
+  padding: 0 16px 0 0;
+  text-align: center;
+}
+.SendModal .BalanceEntry__logo,
+.ReceiveModal .BalanceEntry__logo {
+  padding: 0;
+}
+
+.BalanceEntry__logo__img {
+  font-size: 40px;
+}
+.BalanceEntry__logo + div {
+  position: relative;
+  top: -5px;
+}
+.BalanceEntry__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #252525;
+  font-size: 1.35714286em;
+  line-height: 1;
+  margin-top: 2px;
+  margin-bottom: 1rem;
+}
+
+.BalanceEntry__name p {
+  margin-bottom: 0;
+}
+
+.BalanceEntry__name p.BalanceEntry__coinName {
+  position: relative;
+}
+
+.BalanceEntry__name p.BalanceEntry__coinName:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: #000;
+  top: 10px;
+  right: -20px;
+}
+
+.BalanceEntry__details__amount {
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.BalanceEntry__actions__button {
+  margin-bottom: 0px !important; /* Some weird inconsistent responsiveness stuff happening */
+  margin-right: 12px;
+}
+
+.BalanceEntry__actions__button:last-child {
+  margin-right: 0;
+}
+
+
+.BalanceEntry__sendModal__inputs {
+  margin-bottom: 2em;
+}
+
+.BalanceEntry__balance {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 30px;
+}

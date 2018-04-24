@@ -1,0 +1,9 @@
+.TradingButton {
+  min-height: 6rem;
+}
+
+@media (max-width: 768px) {
+  .TradingButton:first-child {
+    margin-bottom: .55em !important;
+  }
+}

@@ -1,0 +1,8 @@
+.Trade__main {
+  padding: 0 1rem;
+}
+
+.Trade .toastify-content--error {
+  background-color: #FF8A80;
+  color: rgba(0, 0, 0, 0.87);
+}

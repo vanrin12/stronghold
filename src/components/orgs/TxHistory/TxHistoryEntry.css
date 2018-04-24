@@ -1,0 +1,83 @@
+.TxHistoryEntry > td {
+  display: flex;
+  padding: 16px;
+  border-bottom: 1px solid #ebebeb;
+  align-items: center;
+  justify-content: space-between;
+}
+.TxHistoryEntry__rows {
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.TxHistoryEntry__row {
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+}
+.TxHistoryEntry__row--bottom {
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+}
+.TxHistoryEntry__timestamp {
+  padding-right: 1rem;
+}
+.TxHistoryEntry__otherPartyAddress {
+  display: inline-block;
+  font-size: 0.67rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  hyphens: none;
+}
+.TxHistoryEntry__row--bottom a {
+  font-size: 0.67rem;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.TxHistoryEntry__date__month {
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.TxHistoryEntry__date__day {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+.TxHistoryEntry__logo {
+  flex: 0 0 auto;
+  width: 72px; /* 40px for image + 16px*2 for padding */
+  padding: 0 16px;
+  text-align: center;
+  height: 40px;
+}
+.TxHistoryEntry__logo__img {
+  font-size: 40px;
+  width: 55px;
+}
+.TxHistoryEntry__details__action {
+  color: #252525;
+  font-size: 1.35714286em;
+  line-height: 1;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.TxHistoryEntry__details {
+  align-self: flex-start;
+  flex: 12 0 auto;
+}
+.TxHistoryEntry__details__details {
+  line-height: 1;
+  margin-bottom: 0;
+}
+.TxHistoryEntry__amount {
+  font-size: 1.35714286em;
+}
+
+.TxHistoryEntry__actions__button {
+  margin-bottom: 0px !important; /* Some weird inconsistent responsiveness stuff happening */
+}

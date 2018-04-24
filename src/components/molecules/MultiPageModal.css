@@ -1,0 +1,13 @@
+.MultiPageModal__controls {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MultiPageModal__controls__button {
+  transition: opacity 100ms ease;
+}
+.btn.MultiPageModal__controls__button--hidden {
+  cursor: default;
+  opacity: 0.01;
+}

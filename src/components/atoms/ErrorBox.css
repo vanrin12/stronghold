@@ -1,0 +1,25 @@
+.ErrorBox {
+  margin: 1rem 0;
+  display: flex;
+  padding: 0;
+}
+
+/* List of errors?
+.ErrorBox ul:last-child {
+  margin: 0 1rem;
+}
+*/
+
+.ErrorBox .alert__body {
+  white-space: pre-line;
+  width: 100%;
+}
+
+.ErrorBox .alert__close {
+  margin-top: -0.5rem;
+}
+
+.ErrorBox .alert__body a {
+  color: rgb(102, 102, 102) !important;
+  text-decoration: underline;
+}

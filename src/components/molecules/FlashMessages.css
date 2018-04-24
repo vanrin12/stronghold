@@ -1,0 +1,19 @@
+.FlashErrors {
+  /*
+  color: rgba(244, 67, 54, 0.87);
+  material-design red 500
+  */
+  margin: 1rem 0;
+  display: flex;
+  padding: 0;
+}
+.FlashErrors ul:last-child {
+  margin: 0 1rem;
+}
+.FlashErrors .alert__body {
+  white-space: pre-line;
+  width: 100%;
+}
+.FlashErrors .alert__close {
+  margin-top: -0.5rem;
+}

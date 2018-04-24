@@ -1,0 +1,15 @@
+.Login .background-image-holder.loaded {
+  background: url("../../../assets/img/stronghold-vault-dark.jpg");
+  opacity: 1;
+}
+
+.Login__loader {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+.Login__Form p.lead, .Login__TwoFactorForm p.lead {
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.77);
+}

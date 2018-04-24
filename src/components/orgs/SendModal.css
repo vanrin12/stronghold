@@ -1,0 +1,11 @@
+.SendModal__coin {
+  font-size: 40px;
+  position: relative;
+  left: -0.25em;
+}
+
+@media (max-width: 767px) {
+  .SendModal__coin {
+    left: -5px;
+  }
+}

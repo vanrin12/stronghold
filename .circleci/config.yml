@@ -1,0 +1,44 @@
+version: 2
+jobs:
+    build:
+        docker:
+            - image: google/cloud-sdk:latest
+        steps:
+            - run:
+                name: Prepare GCloud
+                command: |
+                    echo $GCLOUD_SERVICE_ACCOUNT | base64 --decode --ignore-garbage > ${HOME}/gcloud-service-account.json
+                    gcloud auth activate-service-account --key-file ${HOME}/gcloud-service-account.json
+                    gcloud config set project $GCLOUD_PROJECT_ID
+            - run:
+                name: Install node & yarn
+                command: |
+                    curl -sL https://deb.nodesource.com/setup_8.x | bash -
+                    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+                    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+                    apt-get update
+                    apt-get install -y nodejs yarn build-essential
+            - checkout
+            - run:
+                name: install-deps
+                command: yarn
+            - run:
+                name: build
+                command: |
+                    if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                      yarn build
+                    elif [ "${CIRCLE_BRANCH}" == "staging" ]; then
+                      cp -f .env.staging .env.production.local
+                      yarn build
+                    fi
+            - run:
+                name: test
+                command: yarn test
+            - run:
+                name: Push files to GCloud
+                command: |
+                    if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                      gsutil -m rsync -d -r ./build gs://app.stronghold.co
+                    elif [ "${CIRCLE_BRANCH}" == "staging" ]; then
+                      gsutil -m rsync -d -r ./build gs://app-staging.stronghold.co
+                    fi

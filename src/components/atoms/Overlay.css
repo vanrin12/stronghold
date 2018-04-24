@@ -1,0 +1,7 @@
+.stronghold-Overlay {
+  opacity: 0.01;
+  transition: all 1.25s ease;
+}
+.stronghold-Overlay--has-entered {
+  opacity: 1;
+}

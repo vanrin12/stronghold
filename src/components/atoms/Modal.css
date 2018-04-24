@@ -1,0 +1,65 @@
+.Modal__dialog {
+  margin-bottom: 0 !important;
+}
+
+.Modal__dialog--constrain {
+  width: 96%;
+}
+
+@media all and (min-width: 480px) {
+  .Modal__dialog--constrain {
+    width: 75%;
+  }
+}
+
+@media all and (min-width: 767px) {
+  .Modal__dialog--constrain {
+    width: 470px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .Modal__dialog--constrain {
+    width: 570px;
+  }
+}
+
+.Modal__dialog__title {
+  padding-left: 0;
+}
+
+@media all and (min-width: 768px) {
+  .Modal__dialog__title {
+    padding-left: 15px;
+  }
+}
+
+
+
+
+
+/* UNUSED CSS BELOW HERE */
+
+.modal-content:focus {
+  outline: none;
+}
+
+.modal-container .modal-content {
+  max-width: 570px;
+  padding: 0 !important;
+}
+
+.modal-container.modal-active.modal-closing {
+  /* taken from theme */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.Modal__box {
+  margin-bottom: 0 !important;
+}
+
+.Modal__box label {
+  font-size: 1.14285714em;
+}

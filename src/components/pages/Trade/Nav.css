@@ -1,0 +1,48 @@
+.Trade__Nav {
+  overflow: hidden;
+  position: relative;
+  border: none !important;
+}
+
+.Trade__Nav .tab {
+  padding: 0;
+  border: none !important;
+}
+
+.Trade__Nav .tab:first-child a {
+  border-radius: 5px 0 0 5px;
+}
+
+.Trade__Nav .tab:last-child a {
+  border-radius: 0 5px 5px 0;
+  border-right: 1px solid #ececec;
+}
+
+.Trade__Nav a {
+  display: block;
+  padding: 0.62857143em 1.85714286em;
+  min-width: 125px;
+  border: 1px solid #ececec;
+  border-right: 0;
+  text-align: center;
+}
+
+.Trade__Nav .active a {
+  color: white;
+  font-weight: 700;
+  letter-spacing: -1px;
+  background: #4a90e2;
+  border-color: #4a90e2 !important;
+}
+
+@media (max-width: 768px) {
+  .Trade__Nav {
+    display: flex !important;
+    padding: 0 15px;
+  }
+
+  .Trade__Nav a {
+    padding: 0.62857143em .85714286em !important;
+    min-width: 75px !important;
+  }
+}

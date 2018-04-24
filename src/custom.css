@@ -1,0 +1,780 @@
+/*! Place your custom styles here */
+
+/* Header */
+.nav-container .bar__module {
+    display: inline-block;
+    margin-right: 0.92857143em;
+    margin-bottom: 1.85714286em;
+}
+
+@media all and (min-width: 1600px) {
+   .container {
+        width: 1570px;
+   }
+}
+
+.nav-container .bar .menu-horizontal {
+    top: 0;
+}
+
+@media (max-width: 767px) {
+    .nav-container .bar__module {
+        display: block;
+    }
+}
+
+
+.line-height-md {
+    line-height: 1.8em;
+}
+
+.w--100 {
+    width: 100% !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.pr--1 {
+    padding-right: .75rem !important;
+}
+.pr--2 {
+    padding-right: 1.85714286rem !important;
+}
+.pr--3 {
+    padding-right: 2.5rem !important;
+}
+.pr--4 {
+    padding-right: 3.5rem !important;
+}
+.pr--5 {
+    padding-right: 4.5rem !important;
+}
+
+.pb--1 {
+    padding-bottom: .75rem !important;
+}
+.pb--2 {
+    padding-bottom: 1.85714286rem !important;
+}
+.pb--3 {
+    padding-bottom: 2.5rem !important;
+}
+.pb--4 {
+    padding-bottom: 3.5rem !important;
+}
+.pb--5 {
+    padding-bottom: 4.5rem !important;
+}
+
+
+.mr--1 {
+    margin-right: .75rem !important;
+}
+.mr--2 {
+    margin-right: 1.85714286rem !important;
+}
+.mr--3 {
+    margin-right: 2.5rem !important;
+}
+.mr--4 {
+    margin-right: 3.5rem !important;
+}
+.mr--5 {
+    margin-right: 4.5rem !important;
+}
+
+
+.mb--1 {
+    margin-bottom: .75rem !important;
+}
+.mb--2 {
+    margin-bottom: 1.85714286rem !important;
+}
+.mb--3 {
+    margin-bottom: 2.5rem !important;
+}
+.mb--4 {
+    margin-bottom: 3.5rem !important;
+}
+.mb--5 {
+    margin-bottom: 4.5rem !important;
+}
+
+.unpad {
+    padding: 0 !important;
+}
+.unpad--bottom {
+    padding-bottom: 0 !important;
+}
+.unpad--top {
+    padding-top: 0 !important;
+}
+section.unpad--bottom {
+    padding-bottom: 0 !important;
+}
+section.unpad {
+    padding: 0 !important;
+}
+section.unpad--top {
+    padding-top: 0 !important;
+}
+.unmarg--bottom {
+    margin-bottom: 0 !important;
+}
+.unmarg {
+    margin: 0 !important;
+}
+
+/* Vertical Align Columns */
+
+/** align bottom **/
+.pos-vertical-align-bottom-columns {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.pos-vertical-align-bottom-columns > div[class*='col-'] {
+    display: table-cell;
+    float: none;
+    vertical-align: bottom;
+}
+@media all and (max-width: 990px) {
+    .pos-vertical-align-bottom-columns {
+        display: block;
+        width: auto;
+    }
+    .pos-vertical-align-bottom-columns > div[class*='col-'] {
+        display: block;
+    }
+}
+
+/* Table */
+
+.table-responsive {
+    border: none !important;
+}
+
+.react-bs-table-container {
+    max-width: 100%;
+}
+
+.react-bs-table-tool-bar {
+    text-align: right;
+}
+
+.react-bs-table-tool-bar .row div:first-child {
+    float: right;
+}
+
+.react-bs-table-tool-bar .row div:first-child .btn {
+    position: relative;
+    top: -48px;
+    border-radius: 6px !important;
+}
+
+.with-download-csv .order-table--buttons-group {
+    padding-right: 130px;
+}
+
+.with-download-csv + div .order-table {
+    padding-top: 0;
+}
+
+
+    /* Order Table */
+
+.order-table--buttons-group select {
+    vertical-align: middle;
+}
+
+.order-table .color--primary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media all and (max-width: 1290px) {
+    .order-table--search-title {
+        padding: 2em 0 !important;
+    }
+
+    .order-table--buttons-group {
+        padding-top: 2em !important;
+        width: 100%;
+    }
+
+    .order-table--buttons-group select {
+        margin-bottom: .8em !important;
+    }
+
+    .order-table--buttons-group .btn {
+        margin-bottom: .8em !important;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .order-table--buttons-group select {
+        float: left;
+    }
+}
+
+
+.order-table {
+    margin-bottom: 10px;
+    padding: 3em 0 1em;
+    border: none;
+}
+
+.order-table.text-center-header th {
+    text-align: center;
+}
+
+.order-table thead th {
+    background: transparent;
+    color: #808080;
+    border: none !important;
+}
+
+.order-table td {
+    vertical-align: middle !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: none !important;
+}
+
+.order-table td .icon-Add {
+    font-size: 1.65rem;
+    cursor: pointer;
+}
+
+.order-table td .remove {
+    cursor: pointer;
+}
+
+.order-table .table-hover tbody tr:hover {
+    background: rgba(74, 144, 226, .03);
+}
+
+.order-table .table-hover tbody tr:hover .remove {
+    color: #d83827;
+}
+
+.order-table .table-hover tbody tr:hover .icon-Add {
+    color: #4a90e2;
+}
+
+/* Card Table */
+.card-table table thead th,
+.card-table table thead td {
+    font-size: .85em;
+    color: #aeaeae;
+}
+
+.card-table table tfoot th,
+.card-table table tfoot td {
+    font-size: .8em;
+    color: #e0e0e0;
+}
+
+.card-table table thead th,
+.card-table table tfoot th {
+    border: none !important;
+    background: #fff !important;
+}
+
+.card-table table tbody td {
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.card-table table td,
+.card-table table th {
+    text-align: center;
+}
+
+.card-table table tr:hover {
+    background: transparent !important;
+}
+
+.card-table table td {
+    font-size: 1.3em;
+}
+
+.card-table table td .dollar-equal {
+    display: block;
+    font-size: .75em;
+    color: #666666;
+}
+
+
+.card-table table td .dollar-equal + span {
+    font-size: .6em;
+    color: #e0e0e0;
+    font-weight: 700;
+}
+
+.react-bs-table.card-table {
+    border: none !important;
+}
+
+.react-bs-table.card-table .table-bordered>tbody>tr>td {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.react-bs-table.balance-table .table-bordered>tbody>tr>td {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border: none !important;
+}
+
+.react-bs-table.balance-table .dollar-equal {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-table .react-bs-container-header .react-bs-table,
+.card-table .react-bs-container-header .table thead th {
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+/* Form Elements */
+
+select.custom-select {
+    padding-right: 0.857143em;
+    width: auto;
+    height: 3em;
+}
+
+.input-radio.size-sm label {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.input-radio.size-sm label:after {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.input-radio.size-sm input:checked + label:after {
+    width: 8px;
+    height: 8px;
+    left: 5px;
+    top: 5px;
+}
+
+
+/* Buttons */
+
+.btn-sm {
+    padding-right: 1.785714em !important;
+    padding-left: 1.785714em !important;
+}
+
+.btn.bg--success {
+    background: #4ebf56;
+    border-color: #4ebf56 !important;
+}
+
+.btn.bg--success:hover {
+    background: #51c959;
+    border-color: #51c959 !important;
+    color: #fff !important;
+}
+
+button.btn {
+    font-size: 12px;
+}
+
+
+
+/* Pagination */
+
+.without-per-page .react-bs-table-pagination .dropdown {
+    display: none;
+}
+
+.without-per-page.with-total-data .react-bs-table-pagination .row {
+    margin-top: 70px !important;
+}
+
+.without-per-page .react-bs-table-pagination .row div:last-child {
+    width: 100%;
+    text-align: center;
+}
+
+.without-per-page .react-bs-table-pagination .row div:last-child ul {
+    float: none;
+}
+
+.without-per-page + .total-data {
+    position: absolute;
+    bottom: 65px;
+    width: calc(100% - 52px);
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination li {
+    float: left;
+}
+
+.pagination li a {
+    padding: 0 .875rem;
+    color: #808080;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination li a:hover {
+    color: #4a90e2;
+    background: transparent;
+}
+
+.pagination li.active {
+    border-bottom: 2px solid #4a90e2;
+}
+
+.pagination li.active a {
+    color: #4a90e2 !important;
+    background: transparent !important;
+}
+
+/* Wallet list */
+
+@media (max-width: 990px) {
+    .wallet-list .pos-vertical-align-columns > div[class*='col-'] {
+        display: inline-block;
+    }
+
+    .wallet-list .pos-vertical-align-columns i {
+        margin-right: 10px;
+    }
+
+
+    .wallet-list .pos-vertical-align-columns > .pos-vertical-align-columns {
+        width: 48%;
+    }
+}
+
+/* Bootstrap select */
+
+.bootstrap-select .btn {
+    padding: 0.62857143em 2.15em 0.92857143em 1.85714286em;
+    font-size: 1em;
+    border-radius: 6px !important;
+    outline: none !important;
+    background: #fcfcfc !important;
+    border-color: #ececec;
+}
+
+.bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+}
+
+.bootstrap-select .dropdown-menu {
+    max-height: 500px !important;
+    left: auto;
+    right: 0;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li small {
+    display: block;
+    padding-left: 0;
+}
+
+.bootstrap-select .btn:hover,
+.bootstrap-select .btn:focus {
+    transform: none;
+    background: #fcfcfc !important;
+    border-color: #ececec !important;
+    box-shadow: none !important;
+}
+
+.bootstrap-select .dropdown-menu {
+    top: -5px;
+}
+
+/* Bootstrap Select on trading page */
+.trading-bs-select .bootstrap-select {
+    float: right !important;
+    width: auto !important;
+}
+
+/* Range Selectirs List */
+.range-list {
+    overflow: hidden;
+    padding: 1em 1.5em;
+}
+
+.range-list li {
+    float: left;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+.range-list li.active {
+    color: #4a90e2;
+}
+
+/* Boxed */
+.boxed {
+    overflow: auto;
+    padding: 1.4em;
+}
+
+.boxed.bg--error > * {
+    color: rgba(255,255,255, .7);
+}
+
+.boxed.bg--error h3 {
+    color: #fff;
+}
+
+.boxed.bg--error .btn {
+    background: rgba(255,255,255, .35);
+    border: none;
+    color: #fff;
+}
+
+
+/* Custom Trading Boxes */
+.trading-boxes {
+    margin-left: 0 !important;
+    margin-bottom: .75rem;
+}
+
+.trading-boxes {
+    padding: 0.5em 1.23809524em;
+    height: 70px;
+}
+
+.trading-boxes.custom-order {
+    color: #666666;
+    font-weight: 400;
+}
+
+
+.trading-boxes.custom-order:hover {
+    text-decoration: none;
+}
+
+.trading-boxes.bg--secondary {
+    background: #fdfdfd;
+}
+
+.trading-boxes h4 span {
+    display: inline-block;
+    color: #fff;
+}
+
+.trading-boxes p {
+    font-size: 1.5em;
+}
+
+.trading-boxes span,
+.trading-boxes span {
+    color: #909090;
+}
+
+.trading-boxes h4 + div {
+    padding-left: 20px;
+}
+
+.trading-boxes.bg--success,
+.trading-boxes.bg--error {
+    padding-left: 0;
+    color: rgba(255,255,255, .7);
+    cursor: pointer;
+}
+
+.trading-boxes.bg--success p,
+.trading-boxes.bg--error p {
+    font-size: 1.2em;
+}
+
+.trading-boxes.bg--success span,
+.trading-boxes.bg--error span {
+    display: block;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: rgba(255,255,255, .7);
+}
+
+.trading-boxes h4 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.trading-boxes h4 {
+    width: 65px;
+    border-right: 1px solid rgba(255,255,255, .7);
+}
+
+/* Trading Card Input */
+
+.trading-card--input {
+    padding: 0 !important;
+    font-size: 1.5em;
+    height: auto;
+    border: none !important;
+}
+
+/* Trading List Settings */
+.trading-list-settings {
+    padding: 1em;
+    text-align: right;
+}
+
+.trading-list-settings li {
+    display: inline-block;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.trading-list-settings .dropdown__content {
+    bottom: 50px;
+    right: 400px;
+    left: auto !important;
+}
+
+.trading-list-settings .dropdown__content li {
+    display: block;
+    margin: 0;
+}
+
+.trading-list-settings li a {
+    color: #666666;
+}
+
+
+.trading .dropdown__content .input-checkbox label {
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 3px;
+}
+
+.trading .dropdown__content .input-checkbox + span {
+    transform: translateY(4px);
+}
+
+.trading .dropdown__content .input-checkbox input:checked + label:before {
+    animation: none !important;
+}
+
+.trading .dropdown__content .input-checkbox input:checked + label:after {
+    top: -6px;
+    font-size: 14px;
+}
+
+.trading span[class^="icon-"] {
+    font-size: 1.5em;
+}
+
+/* Modal */
+
+.modal-content.modal-content-md {
+    width: 100% !important;
+    max-width: 500px;
+}
+
+.modal-content.modal-content-verification input {
+    margin-top: 0 !important;
+    margin-right: 10px;
+    padding-left: 12px;
+    width: 36px;
+    font-size: 18px;
+}
+
+.modal-content.modal-content-verification input:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.modal-container:before {
+    background: rgba(0,0,0, .5);
+}
+
+/* Indicator Line */
+
+.indicator-line {
+    position: relative;
+    height: 7px;
+    background: rgba(74, 144, 226, 0.09);
+}
+
+.indicator-line:after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 7px;
+    background: #4a90e2;
+    transform: translateX(-50%);
+}
+
+
+/* //TODO: need to create a loop with % (from 1 to 100) in scss in react repo */
+.indicator-line.after-25:after {
+    left: 25%;
+}
+
+.indicator-line.after-50:after {
+    left: 50%;
+}
+
+.indicator-line.after-75:after {
+    left: 75%;
+}
+
+
+/* Send Receive Process */
+
+.send-recieve-process .process_item .process__body {
+    float: left;
+    padding-left: 3em;
+    width: calc(100% - 55px);
+}
+
+/* Tabs */
+.tabs-content > .active {
+    display: block;
+    animation: fadeInLeft .5s ease forwards;
+    -webkit-animation: fadeInLeft .5s ease forwards;
+    backface-visibility: hidden;
+}
+
+.react-tabs__tab-panel {
+    min-height: 630px;
+}
+
+/* Dropdown */
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown__trigger {
+    display: inline-block;
+}
+
+.dropdown .dropdown__container {
+    visibility: hidden;
+    pointer-events: all;
+    text-align: left;
+    top: 20px;
+    right: 0;
+}
+
+.dropdown.dropdown--active .dropdown__container {
+    visibility: visible;
+}
+
+.bar .logo {
+    top: 0;
+}
+

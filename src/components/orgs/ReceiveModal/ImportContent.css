@@ -1,0 +1,19 @@
+.ImportContent {
+  padding: 2rem 0;
+}
+
+.ImportContent .btn {
+  margin-top: 1.5rem;
+}
+
+
+.ImportContent p {
+  margin-top: 1.5rem;
+}
+
+.ImportContent__status-msg {
+  padding: 0 11px;
+  font-size: 11px;
+  transition: all 0.3s ease;
+  color: rgba(0,0,0,0.54)
+}

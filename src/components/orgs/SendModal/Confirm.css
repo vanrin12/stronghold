@@ -1,0 +1,73 @@
+.SendConfirm {
+  font-size: 1.2rem;
+}
+.SendConfirm--is-sending * {
+  opacity: 0.9;
+  transition: all 1s ease;
+}
+.SendConfirm__details {
+  display: flex;
+  flex-direction: column;
+}
+.SendConfirm__details__row {
+  display: flex;
+}
+
+.SendConfirm__details__row dt {
+  background: #eee;
+  padding: 1rem;
+  margin: 0 0.5rem 0.25rem 0;
+  flex-basis: 6rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.SendConfirm__details__row dd {
+  padding: 1rem;
+  margin: 0 0 0.25rem;
+  flex-grow: 1;
+}
+
+.SendConfirm__details__cell {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+.SendConfirm__address {
+  font-size: 0.75em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  hyphens: none;
+}
+
+.SendConfirm__memoType {
+  text-transform: uppercase;
+}
+.SendConfirm__memo {
+  font-size: 0.75em;
+}
+.SendConfirm__bottom {
+  text-align: center;
+}
+
+.SendConfirm__Loader {
+  display: inline-block;
+  position: relative;
+  left: 0.2rem;
+  top: 0.3rem;
+}
+.SendConfirm__warningText {
+  display: block;
+  text-align: left;
+  font-size: 0.8rem;
+  padding-bottom: 2rem;
+  color: #e23636;
+  line-height: 1rem;
+}
+.SendConfirm .federation-address {
+  font-size: 11px;
+}
+.SendConfirm__details__fees {
+  display: block;
+  font-size: 0.67em;
+}

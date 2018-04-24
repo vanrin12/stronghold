@@ -1,0 +1,32 @@
+.ReceiveModalContent__qr {
+  display: block;
+  margin: 0 auto;
+  max-height: 65vmin;
+  width: auto;
+}
+.ReceiveModalContent__label {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.ReceiveModalContent__label small {
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+.ReceiveModalContent__warningText {
+  display: block;
+  text-align: left;
+  font-size: 0.8rem;
+  padding-left: 1rem;
+  color: #e23636;
+  line-height: 1rem;
+}
+.ReceiveModalContent__delayText {
+  display: block;
+  text-align: left;
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+.ReceiveModalContent__minimum-warning {
+  color: #e23636;
+}

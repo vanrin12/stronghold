@@ -1,0 +1,36 @@
+.TopNav__UserMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TopNav__UserMenu__right {
+  display: flex;
+  align-items: center;
+}
+
+.TopNav__UserMenu__right-bar li a {
+  color: #252525 !important;
+  opacity: .75;
+}
+
+.TopNav__UserMenu__right-bar li a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.TopNav__UserMenu ul {
+  margin-bottom: 0;
+}
+
+.TopNav__UserMenu__username {
+  font-size: 0.9rem;
+}
+
+.TopNav__UserMenu__username .stack-down-open {
+  font-size: 1.3em;
+}
+
+.TopNav__logout {
+  margin-left: 1.8em;
+}

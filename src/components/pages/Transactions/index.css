@@ -1,0 +1,68 @@
+.Transactions__main h3 {
+  color: #4a90e2;
+  margin: 0 0 2.5rem;
+  padding: 0 15px;
+}
+
+.Transactions__main .TxHistory__Loader {
+  top: 2px;
+  left: 2px;
+}
+
+.Transactions__main > .container {
+  min-height: 300px;
+}
+
+.BsTable__title-container {
+  display: none !important;
+}
+
+.Transactions__Table__empty {
+  margin: 0.5rem 1.1rem;
+}
+
+.Transactions__top-row {
+  display: flex;
+  justify-content: space-between;
+}
+.Transactions__top-row > * {
+  flex-grow: 1;
+}
+.Transactions__top-row > *:first-child {
+  flex-grow: 2;
+}
+.Transactions__top-row > *:nth-child(2) {
+  text-align: right;
+  padding-right: 1.5rem;
+}
+
+/* Transaction row asset cell */
+.Transactions__Row td:nth-of-type(1) {
+  text-align: center;
+}
+.Transactions__Row td:nth-of-type(1) img {
+  padding: 0.2rem 0.3rem;
+  max-width: 40px;
+}
+
+/* Transaction row type cell */
+.Transactions__Row td:nth-of-type(2) {
+  text-transform: capitalize;
+}
+
+.Transactions__Row--sent td:nth-of-type(2),
+.Transactions__Row--sell td:nth-of-type(2) {
+  color: #e23636;  /* red */
+}
+.Transactions__Row--received td:nth-of-type(2),
+.Transactions__Row--buy td:nth-of-type(2) {
+  color: #4ebf56;  /* green */
+}
+
+/* Transaction row description cell */
+.Transactions__Row td:nth-of-type(4) {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  hyphens: none;
+}

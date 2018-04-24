@@ -1,0 +1,13 @@
+.Trade__TrackTicker {
+  text-align: center;
+}
+
+.Trade__TrackTicker a {
+  color: rgba(34, 117, 215, 0.54);
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.Trade__TrackTicker a:focus {
+  color: rgba(34, 117, 215, 0.87);
+}

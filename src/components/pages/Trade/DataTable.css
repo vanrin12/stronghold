@@ -1,0 +1,37 @@
+.DataTable {
+  color: rgba(66, 66, 66, 0.87);
+}
+
+.DataTable__title {
+  margin-bottom: 1rem;
+}
+
+.DataTable thead th {
+  padding: .5em;
+  background: none;
+  color: rgba(66, 66, 66, 0.87);
+  border-bottom: 1px solid rgba(66, 66, 66, .2);
+}
+
+.DataTable tbody tr:not(.DataTableRow--empty):hover {
+  background: rgba(74, 144, 226, .03);
+}
+
+.DataTable tr:not(.DataTableRow--empty):active {
+  background: rgba(74, 144, 226, .75);
+}
+
+.DataTable tr td {
+  padding: .25em;
+  border-bottom: 1px solid rgba(66, 66, 66, .2);
+  cursor: pointer;
+  height: 33px;
+}
+
+.DataTable tr.DataTableRow--empty td {
+  cursor: auto;
+}
+
+.DataTable tr:last-child:not(.DataTableRow--empty) td {
+  border-bottom: none;
+}

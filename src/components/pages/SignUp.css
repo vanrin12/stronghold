@@ -1,0 +1,10 @@
+.SignUp .background-image-holder.loaded {
+  background: url("../../assets/img/stronghold-safe.jpg");
+  opacity: 1;
+}
+.SignUp__Loader {  /* Same as SendForm loader... */
+  display: inline-block;
+  position: relative;
+  left: 0.2rem;
+  top: 0.3rem;
+}
